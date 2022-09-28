@@ -1,9 +1,11 @@
-const ftoc = function() {
-
+const ftoc = function (temp) {
+  tempftoc = (temp - 32) * 5 / 9;
+  return Math.round(tempftoc * 10) / 10;
 };
 
-const ctof = function() {
-
+const ctof = function (temp) {
+  tempctof = temp * 9 / 5 + 32;
+  return Math.round(tempctof * 10) / 10;
 };
 
 // Do not edit below this line
